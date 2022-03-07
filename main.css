@@ -1,0 +1,160 @@
+body {
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.logo {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-family: 'Itim', cursive;
+  font-size: 2.5rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.display {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
+}
+
+nav {
+  background: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+nav li {
+  padding: 2rem 1rem;
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav svg {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+nav .button {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+nav button {
+  padding: 1rem 3rem;
+  background-color: #ffc40a;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+nav button:hover {
+  background-color: #fcc100;
+}
+
+h1 {
+  margin: 6rem 0rem;
+  margin-bottom: 2rem;
+  font-size: 2.7rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  padding: 1rem 3rem;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.input-details {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+button {
+  padding: 1rem 3rem;
+  background-color: #ffc40a;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+button:hover {
+  background-color: #fcc100;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (min-width: 920px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .button {
+    margin-top: 2rem;
+  }
+  .display {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  nav {
+    display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul .display-920-none {
+    display: none;
+  }
+  nav ul a {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=main.css.map */
